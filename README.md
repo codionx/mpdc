@@ -29,6 +29,16 @@ nano docker-compose.yml
 ```
 docker-compose up -d
 ```
+<br />
+
+**4. 备份**
+
+```
+#!/bin/bash
+docker exec web-mysql sh -c 'exec mysqldump --databases 数据库名 -uroot -p密码  | gzip' > /备份路径/数据库名_"$(date +"%Y-%m-%d_%H-%M")".sql.gz
+```
+
+`加入时间戳`
 
 <br /><br />
 
