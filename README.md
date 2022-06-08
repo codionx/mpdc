@@ -2,6 +2,9 @@
 A docker compose script for mysql and phpmyadmin
 
 # 使用教程
+
+<br />
+
 **1. 拉取**
 
 ```
@@ -9,6 +12,8 @@ git clone https://github.com/codionx/mpdc.git
 mv mpdc db
 cd db
 ```
+<br />
+
 **2. 修改docker-compose配置文件**
 
 ```
@@ -16,9 +21,9 @@ cp docker-compose.yml.sample  docker-compose.yml
 nano docker-compose.yml
 ```
 
-```
 修改`PLS-CHANGE`为你希望使用的密码
-```
+
+<br />
 
 **3. 启动并安装**
 ```
