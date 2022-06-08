@@ -11,6 +11,7 @@ services:
       - /root/db/mysql/conf.d:/etc/mysql/conf.d
     environment:
       - MYSQL_USER=root
+      #请修改密码
       - MYSQL_ROOT_PASSWORD=PLS-CHANGE
       - MYSQL_ALLOW_EMPTY_PASSWORD=no
       - MYSQL_DATABASE=test
@@ -29,7 +30,9 @@ services:
       - "8080:80"
     environment:
       - MYSQL_USER=root
+      #请修改密码
       - MYSQL_PASSWORD=PLS-CHANGE
+      #请修改密码
       - MYSQL_ROOT_PASSWORD=PLS-CHANGE
       - PMA_HOST=web-mysql
       - UPLOAD_LIMIT=300M
